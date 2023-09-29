@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="add1" class="vn.edu.iuh.fit.models.Address">
+        <property name="city" value="Kolkata"/>
+        <property name="country" value="India"/>
+        <property name="state" value="West Bengal"/>
+    </bean>
+    <bean id="emp1" class="vn.edu.iuh.fit.models.Employee">
+        <property name="id" value="123"/>
+        <property name="name" value="Mai Thanh Thang"/>
+        <property name="address" ref="add1"/>
+    </bean>
+</beans>
